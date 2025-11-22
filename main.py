@@ -65,7 +65,7 @@ async def handle_voice_message(message: Message):
         logging.info(f"Файл {ogg_filename} успешно загружен в Gemini.")
 
         # Создаем модель
-        model = genai.GenerativeModel('models/gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
 
         # Промпт для модели
         prompt = (
